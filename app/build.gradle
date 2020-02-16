@@ -22,6 +22,10 @@ android {
             keyPassword "bitrise-android-keypass-1234"
         }
     }
+    lintOptions {
+    disable 'RuleToDisable', 'SecondRuleToDisable'
+    }
+    
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
